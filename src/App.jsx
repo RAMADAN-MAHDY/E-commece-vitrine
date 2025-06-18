@@ -15,7 +15,6 @@ import Ligting from './pages/customer/ligting';
 import AdminLayout from './layout/adminLayout';
 import AdminLogin from './pages/admin/adminLogin';
 import CustomerLayout from './layout/customerLayout';
-import ProductByCategory from './components/customer/productByCategory';
 
 function App() {
   return (
@@ -38,6 +37,8 @@ function App() {
          <Route path="/category/:slug/:id" element={<ProductByCategory />} />
         <Route path="decor" element={<Decor />} />
         <Route path="ligting" element={<Ligting />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+         <Route path="/payment" element={<Payment />} />
         
        </Route>
 
